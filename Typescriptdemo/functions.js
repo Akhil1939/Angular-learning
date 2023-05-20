@@ -28,7 +28,7 @@ let numbers2 = [2, 3, 4, 5, 6];
 // console.log("sum3", sum3(10, 30, 100, 200, 300, ...[2, 3, 4, 5, 6]));
 //------------------ 4. generic function ------------------
 function getItems(items) {
-    return new Array().join(",").split(",").map((item) => item);
+    return new Array().concat(items);
 }
 console.log(getItems(["john", "doe"]));
 console.log(getItems([1, 2, 3, 4, 5, 6]));
