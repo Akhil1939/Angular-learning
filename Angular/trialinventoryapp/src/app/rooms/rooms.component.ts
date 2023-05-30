@@ -54,4 +54,9 @@ this.hideRooms = !this.hideRooms;
   }
   
 ]
+
+SelectRoom(room:roomList){
+  console.log(room)
+  
+}
 }

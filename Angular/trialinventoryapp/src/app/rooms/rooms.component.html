@@ -14,27 +14,7 @@
 <!-- ---- directives ---- -->
 <div *ngIf="rooms.availableRooms > 0">
   Rooms List :
-
-  <table>
-    <tr>
-        <th>Sr No.</th>
-      <th>Room Number</th>
-      <th>Room Type</th> 
-      <th>Room Price</th>
-      <th>CheckIn Time</th>
-      <th>Photos</th>
-    </tr>
-    <tr [ngClass]="e ? 'even' : 'odd' " *ngFor="let room of roomList; let i=index; let e = even; let o = odd" >
-        <td>{{i+1}}</td>
-      <td>{{ room.roomNumber }}</td>
-      <td>{{ room.roomType }}</td>
-      <td>{{ room.roomPrice |currency:"INR" }}</td>
-      <td>{{ room.checkInTime | date }}</td>
-      <td>
-        <img src="{{ room.photo }}" alt="room photo" width="100" height="100" />
-      </td>
-    </tr>
-  </table>
-  <!-- <div>{{roomList | json}}</div> -->
-  
+  <app-room-list [rooms]="roomList"
+  (roomSelected)="SelectRoom($event)"
+  ></app-room-list>
 </div>
