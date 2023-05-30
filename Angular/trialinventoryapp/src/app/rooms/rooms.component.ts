@@ -9,7 +9,7 @@ import { Rooms, roomList } from './rooms';
 export class RoomsComponent {
 
   hotelName = 'Hotel California';
-  numberOfRooms = 120;
+  numberOfRooms = 0;
 hideRooms = false;
   addRoom() {
     this.numberOfRooms++;
