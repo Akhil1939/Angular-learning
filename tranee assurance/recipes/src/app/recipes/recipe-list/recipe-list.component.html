@@ -1,0 +1,6 @@
+<p>recipe-list works!</p>
+<button class="btn btn-success">Add Recipe</button>
+<hr>
+<div *ngFor="let item of Recipes">
+    <app-recipe-item [recipe]="item"></app-recipe-item>
+</div>

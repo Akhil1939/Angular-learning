@@ -1,0 +1,19 @@
+
+<table>
+    <tr>
+        <td>
+        <a [routerLink]="['/recipes']">
+            <img [src]="recipe.imagePath" alt="{{ recipe.name }}" style="height: 100px;" class="img-responsive">
+        </a>
+        </td>
+        <td>
+        <a [routerLink]="['/recipes']">
+            <h4>{{ recipe.name }}</h4>
+        </a>
+        <p>{{ recipe.description }}</p>
+        </td>
+        <td>
+        <a [routerLink]="['/recipes']" class="btn btn-default">Edit</a>
+        </td>
+    </tr>
+</table>
