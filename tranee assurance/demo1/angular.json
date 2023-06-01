@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "trialinventoryapp": {
+    "demo1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/trialinventoryapp",
+            "outputPath": "dist/demo1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "trialinventoryapp:build:production"
+              "browserTarget": "demo1:build:production"
             },
             "development": {
-              "browserTarget": "trialinventoryapp:build:development"
+              "browserTarget": "demo1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "trialinventoryapp:build"
+            "browserTarget": "demo1:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "d48d05c1-2f56-473e-8f77-e0ed17ae8329"
+    "analytics": "603add77-4362-4f0e-a87c-1cf6676ccce7"
   }
 }

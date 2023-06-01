@@ -1,0 +1,23 @@
+<p>
+  --------------------------------------------for-loop
+  works!------------------------------------------
+</p>
+
+
+<div>
+  <span *ngFor="let char of dataList">{{ char }},</span>
+</div>
+
+<div>
+  <p *ngFor="let user of Users">
+    {{ user.name | uppercase }} - {{ user.email | uppercase }}
+  </p>
+</div>
+
+
+<ul>
+    <li *ngFor="let user of Users; let i = index">
+        {{ i + 1 }}. {{ user.name | uppercase }} - {{ user.email | uppercase }}
+       <span *ngFor="let account of user.accounts">{{account}} /</span>
+    </li>
+</ul>

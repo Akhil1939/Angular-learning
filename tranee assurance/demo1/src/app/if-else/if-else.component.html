@@ -1,0 +1,13 @@
+<p>--------------------------------------if-else works!------------------------------------------------</p>
+
+
+<h5 *ngIf="!show else elseBlock">
+    Akhil
+</h5>
+<ng-template #elseBlock>
+    <h5>
+        Not Akhil
+    </h5>
+</ng-template>
+
+<button (click)="toggle()">toggle</button>

@@ -1,0 +1,7 @@
+
+
+<div class="border m-2">
+    <span class="text-secondary">Server Name:{{serverElement.name}} </span>
+<p *ngIf="serverElement.type==='server'" class="text-primary">{{serverElement.content}}</p>
+<p *ngIf="serverElement.type==='blueprint'" class="text-danger">{{serverElement.content}}</p>
+</div>

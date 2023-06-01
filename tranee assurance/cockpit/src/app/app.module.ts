@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {RoomsComponent} from './rooms/rooms.component';
-
-import { RoomListComponent } from './rooms/room-list/room-list.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RoomsComponent,
-    RoomListComponent
+    CockpitComponent,
+    ServerElementComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgModule,
-    CommonModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
