@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { logService } from './log.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     AppRoutingModule,
     BrowserAnimationsModule,MatFormFieldModule, MatInputModule, MatSelectModule
   ],
-  providers: [],
+  providers: [logService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
