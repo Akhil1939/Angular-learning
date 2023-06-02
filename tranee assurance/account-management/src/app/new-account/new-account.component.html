@@ -1,0 +1,15 @@
+<p>create new account</p>
+<mat-form-field>
+    <mat-label>Input</mat-label>
+    <input #accountName matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Select</mat-label>
+    <mat-select #status>
+      <mat-option value="active">Active</mat-option>
+      <mat-option value="inActive">inActive option</mat-option>
+      <mat-option value="unknown">unknown</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button class="btn btn-outline-success" (click)="onCreateAccount(accountName.value, status.value)" >Add</button>
+  

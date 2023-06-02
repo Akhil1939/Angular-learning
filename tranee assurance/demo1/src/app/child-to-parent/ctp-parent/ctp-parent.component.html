@@ -1,0 +1,9 @@
+<div class="border">
+    <p>Parent</p>
+    <div class="border m-5">
+        <p>data from child</p>
+        <h3>{{data}}</h3>
+    </div>
+    
+    <app-ctp-child (updateDataEvent)="updateData($event)"></app-ctp-child>
+</div>

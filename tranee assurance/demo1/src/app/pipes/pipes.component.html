@@ -1,0 +1,96 @@
+<p>pipes works!</p>
+<div class="border">
+    <p>uppercase</p>
+    <h3>{{data.name | uppercase}}</h3>
+    <hr>
+    <p>lowercase</p>
+    <h3>{{data.name | lowercase}}</h3>
+    <hr>
+    <p>titlecase</p>
+    <h3>{{data.name | titlecase}}</h3>
+    <hr>
+    <p>slice</p>
+    <h3>{{data.name | uppercase | slice: 0 : 3 }}</h3>
+    <hr>
+    <p>json</p>
+    <h3>{{data | json}}</h3>
+    <hr>
+    <hr>
+    <p>currency</p>
+    <h3>{{data.salary | currency}}</h3>
+    <hr>
+    <p>USD</p>
+    <h3>{{data.salary | currency:'USD':true}}</h3>
+    <hr>
+    <p>INR</p>
+    <h3>{{data.salary | currency:'INR':true}}</h3>
+    <hr>
+    <hr>
+    <p>percent</p>
+    <h3>{{data.salary | percent}}</h3>
+    <hr>
+    <hr>
+    <p>date</p>
+    <h3>{{data.dob | date}}</h3>
+    <hr>
+    <p>short date</p>
+    <h3>{{data.dob | date:'shortDate'}}</h3>
+    <hr>
+    <p>short time</p>
+    <h3>{{data.dob | date:'shortTime'}}</h3>
+    <hr>
+    <p>medium date</p>
+    <h3>{{data.dob | date:'mediumDate'}}</h3>
+    <hr>
+    <p>medium time</p>
+    <h3>{{data.dob | date:'mediumTime'}}</h3>
+    <hr>
+    <p>long date</p>
+    <h3>{{data.dob | date:'longDate'}}</h3>
+    <hr>
+    <p>long time</p>
+    <h3>{{data.dob | date:'longTime'}}</h3>
+    <hr>
+    <p>short</p>
+    <h3>{{data.dob | date:'short'}}</h3>
+    <hr>
+    <p>medium</p>
+    <h3>{{data.dob | date:'medium'}}</h3>
+    <hr>
+    <p>long</p>
+    <h3>{{data.dob | date:'long'}}</h3>
+    <hr>
+    <p>full</p>
+    <h3>{{data.dob | date:'full'}}</h3>
+    <hr>
+    <p>dd/MM/yyyy</p>
+    <h3>{{data.dob | date:'dd/MM/yyyy'}}</h3>
+    <hr>
+    <p>dd/MM/yyyy hh:mm:ss</p>
+    <h3>{{data.dob | date:'dd/MM/yyyy hh:mm:ss'}}</h3>
+    <hr>
+    <hr>
+
+    <!-- numberpipe -->
+    <p>number</p>
+    <h3>{{data.age | number}}</h3>
+    <hr>
+    <p>number:2.2-2</p>
+    <h3>{{data.age | number:'2.2-2'}}</h3>
+    <hr>
+    <p>number:2.2-3</p>
+    <h3>{{data.age | number:'2.2-3'}}</h3>
+    <hr>
+
+    <!-- percentpipe -->
+    <p>percent</p>
+    <h3>{{data.percentage | percent}}</h3>
+    <hr>
+    <p>percent:2.2-2</p>
+    <h3>{{data.percentage | percent:'2.2-2'}}</h3>
+    <hr>
+
+    
+
+
+</div>

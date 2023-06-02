@@ -1,0 +1,11 @@
+<form class="container" #basicForm="ngForm" (submit)="GetData(basicForm.value)">
+    <input class="form-control mb-2 w-25" name="name" ngModel type="text"  placeholder="Enter User Name" />
+    
+    <input class="form-control mb-2 w-25" name="email" ngModel type="text" placeholder="Enter User Email"/>
+    <button type="submit" >SUBMIT</button>
+</form>
+
+<ul>
+    <Li>{{userData.name}}</Li>
+    <Li>{{userData.email}}</Li>
+</ul>

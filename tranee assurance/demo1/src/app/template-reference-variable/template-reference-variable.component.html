@@ -1,0 +1,9 @@
+<p>template-reference-variable works!</p>
+
+<div class="border border-danger p-3">
+    <input class="form-control w-25" type="text" #myInput>
+    <button class="btn btn-success mt-2" (click)="logMessage(myInput.value)">Log</button>
+
+    <p class="mt-2"> using template reference from html <strong>{{myInput.value}}</strong></p>
+    <p class="mt-2">using template reference from ts <strong>{{data}}</strong> </p>
+</div>
